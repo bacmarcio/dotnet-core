@@ -11,6 +11,7 @@ namespace FilmesCRUDRazor.Models{
         public string Titulo { get; set; }
         
         [Display(Name = "Data de Lançamento")]
+        [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString ="{0: dd/MM/yyyy}", ApplyFormatInEditMode = true)]
         public DateTime DataLancamento { get; set; }
 
